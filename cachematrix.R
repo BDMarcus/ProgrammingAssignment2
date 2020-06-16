@@ -35,7 +35,7 @@ cacheSolve <- function(x, ...) {                      ## Return a matrix that is
     return(k)                                         ## returns the inverse of the data
   }
   m <- x$get()                                        ## calls the function of makeCacheMatrix
-  k <- solve(m,...)
+  k <- solve(m, ...)
   x$set_inverse(k)
-  k                                                   ##prints the data by calling the function
+  k                                                   ## prints the data by calling the function
 }
